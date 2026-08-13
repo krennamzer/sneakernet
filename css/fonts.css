@@ -1,0 +1,329 @@
+header#sidebar {
+    position: fixed;
+    z-index: 999;
+
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #fd00c6;
+}
+
+a:visited {
+  color: #fd00c6;
+}
+
+a:focus {
+  background: #21ff2c;
+}
+
+a:hover {
+  background: #ff8ee6;
+  filter:blur(0.8px);
+  color: rgb(94, 255, 0);
+}
+
+a:active {
+  background: #fd00c6;
+  color: #fd00c6;
+}
+
+mark {
+    background-color: rgb(102, 255, 0);
+    color: rgb(255, 255, 255);
+    padding: 8px 5px 8px;
+}
+
+#archive {
+    background-color: rgb(72, 255, 0);
+    color: rgb(255, 0, 0);
+    padding: 0px 0px 0px;
+}
+
+
+.column {
+    float: left;
+    width: 24.2%;
+    padding: 5px;
+
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+
+#main {
+  outline: none;
+  text-decoration: none;
+  padding: 0px 1px 0;
+}
+
+#main:link {
+  color: #fd00c6;
+}
+
+#main:visited {
+  color: #fd00c6;
+}
+
+#main:focus {
+  border-bottom: 1px solid;
+  background: #21ff2c;
+}
+
+#main:hover {
+  border-bottom: 1px solid;
+  background: #ff8ee6;
+  filter:blur(0.8px);
+  color: rgb(94, 255, 0);
+}
+
+#main:active {
+  background: #fd00c6;
+  color: #fd00c6;
+}
+
+
+
+#sword {
+  outline: none;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 1px 1px 0;
+}
+
+#sword:link {
+  color: #ff0000;
+}
+
+#sword:visited {
+  color: #ff0000;
+}
+
+#sword:focus {
+  border-bottom: 1px solid;
+  background: #ff9d9d;
+}
+
+#sword:hover {
+  border-bottom: 1px solid;
+  background: #ff8ee6;
+  filter:blur(0.8px);
+  color: rgb(255, 0, 0);
+}
+
+#sword:active {
+  background: #fd00c6;
+  color: #ff0000;
+}
+
+
+
+#sword2 {
+  outline: none;
+  text-decoration: none;
+  background-color: #000000;
+  padding: 1px 1px 0;
+}
+
+#sword2:link {
+  color: #ff0000;
+}
+
+#sword2:visited {
+  color: #ff0000;
+}
+
+#sword2:focus {
+  border-bottom: 1px solid;
+  background: #ff9d9d;
+}
+
+#sword2:hover {
+  border-bottom: 1px solid;
+  background: #ff8ee6;
+  filter:blur(0.8px);
+  color: rgb(255, 0, 0);
+}
+
+#sword2:active {
+  background: #fd00c6;
+  color: #ff0000;
+}
+
+
+
+#mn {
+  outline: none;
+  text-decoration: none;
+  background-color: #ff0000;
+  padding: 2.5px 5px 2.5px;
+}
+
+#mn:link {
+  color: #ffffff;
+}
+
+#mn:visited {
+  color: #ffffff;
+}
+
+#mn:focus {
+  border-bottom: 1px solid;
+  background: #ff0000;
+}
+
+#mn:hover {
+  border-bottom: 0px solid;
+  background: #ff6767;
+  filter:blur(0.8px);
+  color: rgb(255, 0, 0);
+}
+
+#mn:active {
+  background: #ff0000;
+  color: #ff0000;
+}
+
+
+
+.column2 {
+    float: left;
+    width: 45%;
+    padding: 5px;
+
+}
+
+
+
+
+
+.saccage {
+    float: left;
+    margin-left: 350px;
+    width: 50%;
+    padding: 5px;
+
+}
+
+
+@media (max-width: 450px) {
+    .saccage {
+        width: 100%;
+        margin-left: 0px;
+        
+      
+    }
+}
+
+
+
+@media(max-width:1050px){
+    .column{
+        width: 47%;
+    }
+
+}
+
+
+
+#krenn:link {
+  color:#000;
+}
+
+#krenn:visited {
+  color: #000;
+}
+
+#krenn:active {
+  background: #ffffff;
+  color: rgb(255, 0, 0);
+}
+
+
+#krenn:focus {
+  background: #21ff2c;
+}
+
+#krenn:hover {
+  background: #ffffff;
+  filter:blur(0.8px);
+}
+
+
+
+
+
+
+
+#krenn2:link {
+  color:#000;
+}
+
+#krenn2:visited {
+  color: #000;
+}
+
+#krenn2:active {
+  background: rgb(43, 255, 0);
+  color: rgb(255, 0, 0);
+}
+
+
+#krenn2:focus {
+  background: rgb(43, 255, 0);
+}
+
+#krenn2:hover {
+  background: rgb(43, 255, 0);
+  filter:blur(0.8px);
+}
+
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Pour centrer verticalement sur toute la hauteur */
+  flex-wrap: wrap;
+}
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 300px;
+  
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh; /* Pour centrer verticalement sur toute la hauteur */
+  flex-wrap: wrap;
+
+}
+
+.container2 img {
+  margin: 60px;
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="sneakernet cd de krennamzer">
+        <meta name="keywords" content="Krennamzer, 03n, musique électronique">
+        <meta name="author" content="Krennamzer, 03n">
+        <title> @@@sneakernet cd@@@  </title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/fonts.css">
+        <!-- FIN CSS -->
+
+
+
+
+
+    </head>
+    <body style="background-color: rgb(43, 255, 0);">       
+
+        <header id="sidebar">
+            <nav>
+                <li style="color: rgb(0, 0, 0); font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><a href="index.html" target="_self" title="page d'accueil" id="krenn"> @krennamzer</li></a> <br>
+                <li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"> <a href="sn archives.html" target="_self" title="serf narrative" id="main">>sn archives<</a></li>
+                <li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"> <a href="https://krennamzer.github.io/playlist/" target="_blank" title="écoutez!!!!" id="main"> >>>playlist< </a> </li>
+                <li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"> <a href="https://krennamzer.github.io/sneakernet/" target="_self" title="pr d cdusbs<3333" id="main"> >sneakernet< </a> </li>
+                <li style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"> <a href="liens.html" target="_self" title="les ptits liens" id="main"> >arborescence< </a> </li>
+
+
+
+
+                
+                
+
+
+
+            </nav> 
+            
+        
+            
+        
+
+
+        </header>
+        <br><br><br><br><br><br><br><br><br>
+        <p>
+            <form id="myForm" style="margin-left: 400px;">
+
+                <div>
+                    <label for="capcha">capcha/t humain·e??:</label>
+                    <input type="checkbox" id="capcha" name="capcha">
+                </div>
+                <br>
+
+                <div>
+                    <label for="blaze">blaze:</label>
+                    <input type="text" id="blaze" name="blaze" placeholder="ptdr t ki??" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="quelcd">quel cd??:</label>
+                    <input type="text" id="quelcd" name="quelcd" placeholder="c lequel ton preffff" required>
+                </div>
+                <br>
+
+                
+
+                <div>
+                    <label for="prix">tu veux mettre cb?:</label>
+                    <input type="text" id="prix" name="prix" placeholder="c prix libre :)" required>
+                </div>
+                <br>
+
+                <div>
+                    <label for="contact">contact:</label>
+                    <input type="text" id="contact" name="contact" placeholder="email·insta·num" required>
+                </div>
+            
+
+                <p>
+                    pr gérer ac toi cmt tu le recup &lt;33
+                </p>
+
+                <div>
+                    <input type="reset">
+                    <input type="submit">
+                </div>
+
+            </form>
+
+                <p id="status"></p>
+
+            <script>
+                document.getElementById("myForm").addEventListener("submit", async function (e) {
+                e.preventDefault(); // empêche l'ouverture de Formspree
+
+                const form = e.target;
+                const data = new FormData(form);
+
+                const response = await fetch("https://formspree.io/f/xqargbkw", {
+                    method: "POST",
+                    body: data,
+                    headers: { "Accept": "application/json" }
+                });
+
+                if (response.ok) {
+                    // OPTION 1 : Message sur la même page
+                    document.getElementById("status").innerText = "cimer, jte contacte vite ☺︎♥!!";
+                    
+                    
+                    
+                    form.reset();
+                } else {
+                    document.getElementById("status").innerText = "Erreur... essaye encore ;)";
+                }
+                });
+            </script>
+
+
+
+
+
+
+
+
+        </p>
+
+        
+
+    
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+</html>
